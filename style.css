@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+body {
+  margin-bottom: 80px;
+  background: linear-gradient(to top left, #2893b4, #299918);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.digits {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  gap: 3px;
+}
+
+.span {
+  grid-column: span 2;
+}
+
+button {
+  cursor: pointer;
+  font-size: 3rem;
+  background: rgb(83, 83, 19);
+  color: rgb(19, 19, 85);
+  height: 6rem;
+}
+
+button:hover {
+  background-color: rgb(22, 9, 9);
+}
+
+.screen {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1rem;
+  height: 8rem;
+  background-color: rgb(117, 30, 30);
+  margin-bottom: 3px;
+}
+
+.history {
+  color: white;
+  font-size: 25px;
+}
+
+.input {
+  color: grey;
+  font-size: 32px;
+}
+
+.background {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 645px;
+  border-radius: 10px;
+}
+
+/* animation: blinkingBackground 1s infinite;
+
+@keyframes blinkingBackground {
+  0% {
+    background-color: #10c018;
+  }
+  25% {
+    background-color: #1056c0;
+  }
+  50% {
+    background-color: #ef0a1a;
+  }
+  75% {
+    background-color: #254878;
+  }
+  100% {
+    background-color: #04a1d5;
+  } */
