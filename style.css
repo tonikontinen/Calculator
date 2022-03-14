@@ -17,60 +17,94 @@ main {
   min-height: 100vh;
 }
 
-.digits {
+.container {
   display: grid;
   justify-content: center;
-  align-content: center;
-  grid-template-columns: repeat(4, 100px);
-  gap: 3px;
+  align-items: center;
+  grid-template-columns: repeat(4, 7rem);
+  background-color: rgb(69, 94, 109);
+  border-radius: 15px;
+  padding: 15px;
+  height: 40rem;
+  column-gap: 2px;
+  row-gap: 2px;
+  border: solid black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.span {
+.stretch {
   grid-column: span 2;
+  background-color: rgb(250, 142, 236);
+  color: rgb(17, 16, 16);
 }
 
-button {
-  cursor: pointer;
-  font-size: 3rem;
-  background: rgb(83, 83, 19);
-  color: rgb(19, 19, 85);
-  height: 6rem;
-}
-
-button:hover {
-  background-color: rgb(22, 9, 9);
+.stretch:hover {
+  background-color: white;
 }
 
 .screen {
   grid-column: 1 / -1;
+  background-color: rgb(206, 200, 200);
+  height: 7rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
-  padding: 1rem;
-  height: 8rem;
-  background-color: rgb(117, 30, 30);
-  margin-bottom: 3px;
+  padding: 20px;
+  border-radius: 15px;
+  border-right: solid black;
+  border-left: solid black;
+  border-top: solid black;
+}
+
+button {
+  font-size: 2rem;
+  border: solid rgb(59, 58, 58);
+  color: rgb(41, 37, 37);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(90, 79, 79);
+}
+
+.equals {
+  background-color: rgb(17, 84, 146);
+  color: rgb(17, 16, 16);
+}
+
+.equals:hover {
+  background-color: white;
+}
+
+.operator {
+  background-color: rgb(17, 84, 146);
+  color: rgb(17, 16, 16);
+}
+
+.operator:hover {
+  background-color: white;
+}
+
+.ce {
+  background-color: rgb(250, 142, 236);
+  color: rgb(17, 16, 16);
+}
+
+.ce:hover {
+  background-color: white;
 }
 
 .history {
-  color: white;
   font-size: 25px;
+  color: rgb(99, 94, 94);
 }
 
 .input {
-  color: grey;
   font-size: 32px;
-}
-
-.background {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 430px;
-  height: 645px;
-  border-radius: 10px;
+  color: rgb(73, 70, 70);
 }
 
 /* animation: blinkingBackground 1s infinite;
